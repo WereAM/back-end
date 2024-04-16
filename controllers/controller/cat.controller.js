@@ -7,9 +7,9 @@ exports.create = (req, res) => {
     res.send("Cat created: " + name); //send a response to the client with the message "Cat created" 
 };
 
-// exports.read = (req, res) => { //function to read all the cats and send a response to the client
-//     res.send(cat); //send a response to the client with the array of cats
-// };
+exports.read = (req, res) => { //function to read all the cats and send a response to the client
+    res.send(cat); //send a response to the client with the array of cats
+};
 
 // exports.update = (req, res) => {
 //     const { name } = req.params; //extract the name parameter from the request
