@@ -2,10 +2,12 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-const cats = require ('./routes/cat.routes');
+// const cats = require ('./routes/cat.routes');
+const list = require('./routes/todo.routes');
 
 // Use the router
-app.use('/', cats);
+// app.use('/', cats);
+app.use('/', list);
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
