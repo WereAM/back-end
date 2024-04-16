@@ -11,11 +11,11 @@ exports.read = (req, res) => { //function to read all the cats and send a respon
     res.send(cat); //send a response to the client with the array of cats
 };
 
-// exports.update = (req, res) => {
-//     const { name } = req.params; //extract the name parameter from the request
-//     cat.push(name); //add the name to the array of cats
-//     res.send("Cat updated: " + name); //send a response to the client with the message "Cat updated"
-// };
+exports.update = (req, res) => {
+    const { name } = req.params; //extract the name parameter from the request
+    cat.push(name); //add the name to the array of cats
+    res.send("Cat updated: " + name); //send a response to the client with the message "Cat updated"
+};
 
 // exports.delete = (req, res) => {
 //     const { name } = req.params; //extract the name parameter from the URL
